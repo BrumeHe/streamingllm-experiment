@@ -1,0 +1,4 @@
+mode,description,scored_tokens,ppl
+full,full KV (baseline),12276,4.4726
+window,sliding window only,12276,8.5696
+sink_window,sink (first 4) + sliding window,12276,4.7126
