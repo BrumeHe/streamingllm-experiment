@@ -21,8 +21,19 @@
 复现过程中的经验: To be done
 
 
+逐块 PPL 曲线
+| chunk 起点 | full | window | sink_window |
+|---|---|---|---|
+| 0 | 6.02 | 6.02 | 6.02 |
+| 1024 | 4.32 | 4.32 | 4.32 |
+| 2048 | 5.78 | **16.33** | 5.88 |
+| 4096 | 5.21 | **13.48** | 5.47 |
+| 8192 | 4.77 | **11.38** | 5.34 |
+| 11264 | 5.43 | **9.94** | 6.13 |
+
+
 可视化：（ctx8192下）
 第1层的注意力图
-![alt text](results/sink_heatmap_ctx8192_layer1.png)
+![/sink_heatmap_ctx8192_layer1.png](results/sink_heatmap_ctx8192_layer1.png)
 第26层的注意力图
-![alt text](results/sink_heatmap_ctx8192_layer26.png)
+![/sink_heatmap_ctx8192_layer26.png](results/sink_heatmap_ctx8192_layer26.png)
